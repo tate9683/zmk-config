@@ -1,4 +1,4 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: Ambitent_ble
+    shield: qaz
     snippet: studio-rpc-usb-uart
