@@ -1,4 +1,3 @@
 include:
-  - board: seeeduino_xiao_ble
-    shield: qaz
-    snippet: studio-rpc-usb-uart
+  - board: nrf52840_m2
+    shield: chalice
