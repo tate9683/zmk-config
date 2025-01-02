@@ -33,7 +33,7 @@
       bindings = <
 &trans      &trans   &trans  &trans  &trans      &trans   &trans    &kp INT3  &trans  &trans 
 &trans      &trans   &trans  &trans  &trans      &kp LBRC &kp RBRC  &trans    &trans  &trans 
-&kp LSHIFT  &kp CAPS &trans  &trans  &trans      &trans   &kp K_APP &kp SLSH  &trans  &trans 
+&kp LSHIFT  &kp CAPS &trans  &trans  &trans      &trans   &kp K_APP &kp SLASH &trans  &trans 
                      &trans  &trans  &trans      &trans   &trans    &trans
       >;
     };
