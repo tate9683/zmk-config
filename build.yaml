@@ -10,4 +10,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: Splitent
+    shield: splitent_left
+  - board: seeeduino_xiao_ble
+    shield: splitent_right
