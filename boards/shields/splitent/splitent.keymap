@@ -16,7 +16,7 @@
 &kp Q    &kp W    &kp E    &kp R    &kp T       &kp Y    &kp U    &kp I     &kp O   &kp P    
 &kp A    &kp S    &kp D    &kp F    &kp G       &kp H    &kp J    &kp K     &kp L   &kp MINUS 
 &kp Z    &kp X    &kp C    &kp V    &kp B       &kp N    &kp M    &kp COMMA &kp DOT &kp SLASH
-        &mt LALT caps  &lt 3 ENTER  &mt LCMD    &kp DEL  &lt 1 SPACE  &lt 2 TAB
+   &mt LALT CAPS  &lt 3 RET  &mt LCMD DEL       &BSPC    &lt 1 SPACE  &lt 2 TAB
       >;
 		};
 
@@ -33,7 +33,7 @@
       bindings = <
 &trans      &trans   &trans  &trans  &trans    &trans   &trans    &kp INT3  &trans  &trans 
 &trans      &trans   &trans  &trans  &trans    &kp LBRC &kp RBRC  &trans    &trans  &trans 
-&kp LSHIFT  &kp caps &trans  &trans  &trans    &trans   &kp K_APP &kp SLSH  &trans  &trans 
+&kp LSHIFT  &kp CAPS &trans  &trans  &trans    &trans   &kp K_APP &kp SLSH  &trans  &trans 
                      &trans  &trans  &trans    &trans   &trans    &trans
       >;
     };
