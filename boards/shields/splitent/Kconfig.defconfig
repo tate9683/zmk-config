@@ -1,7 +1,7 @@
 if SHIELD_SPLITENT_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "splitent"
+    default "Splitent"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
