@@ -5,6 +5,7 @@
 
 &lt {
   retro-tap;
+  flavor = "tap-preferred";
 };
 
 / {
