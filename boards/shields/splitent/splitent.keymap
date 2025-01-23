@@ -7,7 +7,7 @@
   retro-tap;
 };
 
-rpi: require_prior_idle {
+&rpi: require_prior_idle {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     flavor = "tap-preferred";
