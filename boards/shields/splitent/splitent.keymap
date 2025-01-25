@@ -4,6 +4,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
+  quick-tap-ms = <180>
+  flavor = "tap-preferred";
+};
+
+&mt {
+  quick-tap-ms = <180>
   flavor = "tap-preferred";
 };
 
@@ -71,7 +77,7 @@
     second_layer {
       bindings = <
         &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5      &trans   &trans       &kp INT3  &trans  &trans 
-        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR  &bt BT_CLR_ALL  &trans            &kp LBRC &kp RBRC     &trans    &trans  &trans 
+        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR  &bt BT_CLR_ALL  &trans            &kp LBKT &kp RBKT     &trans    &trans  &trans 
         &kp LSHIFT  &kp CAPS    &trans      &trans          &trans            &trans   &kp K_APP    &kp SLASH &trans  &trans 
                                 &trans      &bootloader     &trans            &trans   &bootloader  &trans
       >;
