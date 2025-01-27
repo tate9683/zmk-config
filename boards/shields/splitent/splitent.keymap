@@ -59,10 +59,10 @@
 
     default_layer {
       bindings = <
-        &td0          &kp W    &kp E    &kp R    &kp T       &kp Y    &kp U    &kp I     &kp O   &kp P    
-        &kp A         &kp S    &kp D    &kp F    &kp G       &kp H    &kp J    &kp K     &kp L   &rpi RCTRL MINUS 
-        &rpi LSHIFT Z &kp X    &kp C    &kp V    &kp B       &kp N    &kp M    &td1      &td2    &rpi RSHIFT SLASH
-                &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL       &kp BSPC &lt 1 RET  &lt 2 TAB
+        &td0          &kp W    &kp E    &kp R    &kp T             &kp Y    &kp U    &kp I     &kp O   &kp P    
+        &kp A         &kp S    &kp D    &kp F    &kp G             &kp H    &kp J    &kp K     &kp L   &rpi RCTRL MINUS 
+        &rpi LSHIFT Z &kp X    &kp C    &kp V    &kp B             &kp N    &kp M    &td1      &td2    &rpi RSHIFT SLASH
+              &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL             &lt 2 BSPC  &lt 1 RET  &lt 4 TAB
       >;
 		};
 
@@ -77,20 +77,30 @@
 
     second_layer {
       bindings = <
-        &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5      &kp INT3  &trans         &trans          &trans           &trans
-        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR  &bt BT_CLR_ALL  &kp LBKT          &kp RBKT  &mkp RCLK      &msc SCRL_UP    &msc SCRL_DOWN   &trans
-        &kp LSHIFT  &kp CAPS    &trans      &trans          &trans            &mkp LCLK &mmv MOVE_LEFT &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-                                &trans      &bootloader     &trans            &trans    &bootloader    &trans
+        &trans      &trans    &trans    &trans    &kp LBRC         &kp RBRC  &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &kp INT3
+        &trans      &trans    &trans    &trans    &kp LBKT         &kp RBKT  &mkp MOVE_LEFT &msc MOVE_DOWN &msc MOVE_RIGHT  &trans
+        &kp LSHIFT  &kp CAPS  &trans    &trans    &trans           &mkp MB4  &mkp LCLK      &mkp MCLK      &mkp RCLK        &mkp MB5
+                              &trans    &trans    &&caps_word      &trans    &trans         &trans
       >;
     };
 
     third_layer {
       bindings = <
-        &kp F1     &kp F2    &kp F3    &kp F4   &kp F5         &trans   &kp PG_UP &kp UP     &kp PG_DN &trans
-        &kp F6     &kp F7    &kp F8    &kp F9   &kp F10        &kp HOME &kp LEFT  &kp DOWN   &kp RIGHT &kp BSPC
-        &kp LSHIFT &kp F11   &kp PSCRN &kp SLCK &kp LNLCK      &kp END  &trans    &kp LA(UP) &kp SEMI  &kp SQT
-                             &bootloader    &trans   &trans         &trans   &trans    &trans
+        &kp F1     &kp F2    &kp F3    &kp F4   &kp F5             &trans   &kp PG_UP &kp UP     &kp PG_DN &trans
+        &kp F6     &kp F7    &kp F8    &kp F9   &kp F10            &kp HOME &kp LEFT  &kp DOWN   &kp RIGHT &kp BSPC
+        &kp LSHIFT &kp F11   &kp PSCRN &kp SLCK &kp LNLCK          &kp END  &trans    &kp LA(UP) &kp SEMI  &kp SQT
+                          &bootloader  &trans   &trans             &trans   &trans    &trans
       >;
     };
+
+    fourth_layer {
+      bindings = <
+        &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_SEL 5      &kp PSCRN  &trans       &trans  &trans  &trans
+        &bt BT_NXT   &bt BT_PRV   &bt BT_CLR   &bt BT_CLR_ALL &trans            &trans     &trans       &trans  &trans  &trans
+        &trans       &trans       &trans       &trans         &trans            &trans     &trans       &trans  &trans  &trans
+                                  &trans       &bootloader    &trans            &trans     &bootloader  &trans
+      >;
+    };
+
   };
 };
