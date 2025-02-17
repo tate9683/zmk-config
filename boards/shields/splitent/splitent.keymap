@@ -77,7 +77,7 @@
 
     second_layer {
       bindings = <
-        &trans      &trans    &trans    &trans    &kp LBRC         &kp RBRC  &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &kp INT3
+        &trans      &trans    &DQT      &SQT      &kp LBRC         &kp RBRC  &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &kp INT3
         &trans      &trans    &trans    &trans    &kp LBKT         &kp RBKT  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans
         &kp LSHIFT  &kp CAPS  &trans    &trans    &trans           &mkp MB4  &mkp LCLK      &mkp MCLK      &mkp RCLK        &mkp MB5
                               &trans    &trans    &caps_word       &trans    &trans         &trans
