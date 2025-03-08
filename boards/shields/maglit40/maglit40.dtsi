@@ -55,7 +55,7 @@
 
         // Call &reset_nav on NAV layer leave
         nav_reset {
-            layers = <NAV>;
+            layers = <0>;
             bindings = <&none &none>;
         };
     };
