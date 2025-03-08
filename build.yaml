@@ -9,9 +9,17 @@
 # shield: [ "corne_left", "corne_right" ]
 ---
 include:
+### Splitent ###
+#  - board: seeeduino_xiao_ble
+#    shield: splitent_left
+#  - board: seeeduino_xiao_ble
+#    shield: splitent_right
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
+### Maglit40ble ###
   - board: seeeduino_xiao_ble
-    shield: splitent_left
+    shield: maglit40_left
   - board: seeeduino_xiao_ble
-    shield: splitent_right
+    shield: maglit40_right
   - board: seeeduino_xiao_ble
     shield: settings_reset

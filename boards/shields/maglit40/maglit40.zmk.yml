@@ -1,0 +1,11 @@
+file_format: "1"
+id: maglit40
+name: Maglit40 
+type: shield
+url: https://github.com/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - maglit40_left
+  - maglit40_right
