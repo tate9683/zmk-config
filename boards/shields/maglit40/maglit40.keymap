@@ -20,8 +20,18 @@
         compatible = "zmk,layer-listeners";
 
         nav_num_feedback {
-            layers = <1 2>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,100,100) &none &rgb_ug RGB_COLOR_HSB(240,100,100) &none>;
+            layers = <
+                1
+                2
+                3
+                4
+              >;
+            bindings = <
+                &rgb_ug RGB_COLOR_HSB(0,100,100) &none 
+                &rgb_ug RGB_COLOR_HSB(240,100,100) &none
+                &rgb_ug RGB_COLOR_HSB(120,100,100) &none
+                &rgb_ug RGB_COLOR_HSB(300,100,100) &none
+              >;
         };
 
         // Call &reset_nav on NAV layer leave
