@@ -22,7 +22,7 @@
         // Call &haptic_feedback_in on layer enter, and &haptic_feedback_out on layer leave
         nav_num_feedback {
             layers = <1>;
-            bindings = <rgb_ug RGB_COLOR_HSB(128,100,100) &none>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(128,100,100) &none>;
         };
 
         // Call &reset_nav on NAV layer leave
