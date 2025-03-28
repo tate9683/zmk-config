@@ -16,23 +16,6 @@
 };
 
 / {
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        nav_num_feedback {
-            layers = <1>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,100,100)>;
-        };
-
-        // Call &reset_nav on NAV layer leave
-        nav_reset {
-            layers = <0>;
-            bindings = <&none &none>;
-        };
-    };
-};
-
-/ {
     behaviors {
         mt2: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
@@ -86,16 +69,16 @@
 
     first_layer {
       bindings = <
-        &kp CAPS  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET   &kp AMPS     &kp ASTRK       &kp LPAR      &kp RPAR  &trans
-        &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6      &kp N7       &kp N8          &kp N9        &kp N0    &trans
-        &trans    &trans    &trans    &kp SLASH &kp COLON &kp EQUAL     &kp KP_PLUS &kp KP_MINUS &kp KP_MULTIPLY &kp KP_DIVIDE &trans
+        &trans    &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT     &kp CARET   &kp AMPS     &kp ASTRK       &kp LPAR      &kp RPAR  &trans
+        &trans    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5        &kp N6      &kp N7       &kp N8          &kp N9        &kp N0    &trans
+        &trans    &trans    &kp UNDER  &kp SLASH &kp COLON &kp EQUAL     &kp KP_PLUS &kp KP_MINUS &kp KP_MULTIPLY &kp KP_DIVIDE &trans
                  &trans       &trans         &trans       &trans         &trans       &trans       &trans
       >;
     };
 
     second_layer {
       bindings = <
-        &trans     &trans    &kp INT3  &kp DQT   &kp SQT   &kp LBRC     &kp RBRC  &trans     &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &trans
+        &trans     &trans    &kp INT3  &kp DQT   &kp SQT   &kp LBRC     &kp RBRC  &trans     &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &rgb_ug RGB_TOG
         &trans     &trans    &trans    &trans    &trans    &kp LBKT     &kp RBKT  &mkp LCLK  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &mkp RCLK
         &trans     &trans    &trans    &trans    &trans    &kp LPAR     &kp RPAR  &trans     &mkp MCLK      &mkp MB4       &mkp MB5
                  &trans       &trans         &trans       &trans         &trans       &trans       &trans
@@ -104,7 +87,7 @@
 
     third_layer {
       bindings = <
-        &trans     &kp F1     &kp F2    &kp F3    &kp F4   &kp F5        &trans    &kp PG_UP  &kp UP      &kp PG_DN  &trans    &trans
+        &kp CAPS   &kp F1     &kp F2    &kp F3    &kp F4   &kp F5        &trans    &kp PG_UP  &kp UP      &kp PG_DN  &trans    &trans
         &trans     &kp F6     &kp F7    &kp F8    &kp F9   &kp F10       &kp HOME  &kp LEFT   &kp DOWN    &kp RIGHT  &kp BSPC  &trans
         &trans     &kp F11    &kp F12   &kp PSCRN &kp SLCK &kp LNLCK     &kp END   &trans     &kp LA(UP)  &kp SEMI   &kp SQT 
                  &trans       &trans         &trans       &trans          &trans       &trans       &trans
