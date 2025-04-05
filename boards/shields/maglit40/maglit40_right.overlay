@@ -1,4 +1,4 @@
-#include "maglit40.dts"
+#include "maglit40.dtsi"
 
 &default_transform {
 	col-offset = <6>;
