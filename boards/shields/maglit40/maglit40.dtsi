@@ -100,6 +100,16 @@
         , <&key_physical_attrs 100 100 1150  300       0     0     0>
         ;
     };
+    
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        Maglit40_physical_layout {
+            physical-layout = <&Maglit40_physical_layout>;
+            positions = <>;
+        };
+    };
+        
 
   default_transform: keymap_transform_0 {
     compatible = "zmk,matrix-transform";
