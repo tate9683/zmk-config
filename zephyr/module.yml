@@ -1,3 +1,5 @@
+name: zmk-keyboard-maglit40
+
 build:
   settings:
     board_root: .
