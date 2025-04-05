@@ -47,7 +47,7 @@
     zmk,kscan = &kscan0;
     zmk,matrix-transform = &default_transform;
     zmk,battery = &vbatt;
-    zmk,physical-layout = &roba_physical_layout;
+    zmk,physical-layout = &Maglit40_physical_layout;
     zmk,underglow = &led_strip;
   };
 
