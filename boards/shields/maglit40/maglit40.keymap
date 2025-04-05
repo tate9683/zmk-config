@@ -63,7 +63,7 @@
         &kp ESC        &kp Q     &kp W     &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P            &kp BSPC 
         &mt2 LCTRL TAB &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &mt2 RCTRL MINUS &kp RET
         &kp LSHFT      &kp Z     &kp X     &kp C     &kp V     &kp B       &kp N     &kp M     &td1      &td2      &mt2 RSHFT SLASH
-                 &lt 4 BSLH   &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL      &lt 1 RET  &lt 2 K_APP  &studio_unlock 
+                 &lt 4 BSLH   &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL      &lt 1 RET  &lt 2 K_APP  &lt 4 UNDER 
       >;
 		};
 
