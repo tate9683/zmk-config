@@ -104,10 +104,6 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        Maglit40_physical_layout {
-            physical-layout = <&Maglit40_physical_layout>;
-            positions = <>;
-        };
     };
         
 
