@@ -1,4 +1,4 @@
-#include "maglit40.dtsi"
+#include "maglit40.dts"
 
 &kscan0 {
 	col-gpios
