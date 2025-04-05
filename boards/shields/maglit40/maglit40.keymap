@@ -80,7 +80,7 @@
       bindings = <
         &trans     &trans    &kp INT3  &kp DQT   &kp SQT   &kp LBRC     &kp RBRC  &trans     &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &rgb_ug RGB_TOG
         &trans     &trans    &trans    &trans    &trans    &kp LBKT     &kp RBKT  &mkp LCLK  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &mkp RCLK
-        &trans     &trans    &trans    &trans    &trans    &kp LPAR     &kp RPAR  &trans     &mkp MCLK      &mkp MB4       &mkp MB5
+        &trans     &trans    &trans    &trans    &trans    &kp LPAR     &kp RPAR  &trans     &mkp MCLK      &mkp MB4       &kp UNDER
                  &trans       &trans         &trans       &trans         &trans       &trans       &trans
       >;
     };
@@ -96,7 +96,7 @@
 
     fourth_layer {
       bindings = <
-        &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_SEL 5  &trans        &kp PSCRN  &trans  &trans  &trans  &trans  &trans
+        &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &bt BT_SEL 5  &trans        &kp PSCRN  &trans  &trans  &trans  &trans  &studio_unlock
         &bt BT_NXT   &bt BT_PRV   &bt BT_CLR   &bt BT_CLR_ALL &trans        &trans        &trans     &trans  &trans  &trans  &trans  &trans
         &trans       &trans       &trans       &trans         &trans        &trans        &trans     &trans  &trans  &trans  &trans
                   &trans          &bootloader        &trans            &trans              &trans      &bootloader    &trans
