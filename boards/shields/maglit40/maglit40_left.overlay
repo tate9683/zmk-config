@@ -1,5 +1,7 @@
 #include "maglit40.dtsi"
 
+&xiao_serial { status = "disabled"; };
+
 &kscan0 {
 	col-gpios
 		= <&xiao_d 4 (GPIO_ACTIVE_HIGH)>
