@@ -23,7 +23,6 @@
             tapping-term-ms = <180>;
             bindings = <&kp DOT>, <&kp COLON>;
         };
-      };
     };
 
   keymap {
@@ -74,4 +73,5 @@
       >;
     };
 
+  };
 };
