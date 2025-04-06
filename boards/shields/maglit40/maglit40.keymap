@@ -9,27 +9,8 @@
     chain-length = <1>;
 };
 
-&lt {
-  quick-tap-ms = <180>;
-  flavor = "tap-preferred";
-};
-
-&mt {
-  quick-tap-ms = <180>;
-  flavor = "tap-preferred";
-};
-
 / {
     behaviors {
-        mt2: require_prior_idle {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            bindings = <&kp>, <&kp>;
-        };
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -49,14 +30,6 @@
             bindings = <&kp DOT>, <&kp COLON>;
         };
       };
-  
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <25 35>;
-            bindings = <&caps_word>;
-        };
     };
 
   keymap {
@@ -65,8 +38,8 @@
     default_layer {
       bindings = <
         &kp ESC        &kp Q     &kp W     &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P            &kp BSPC 
-        &mt2 LCTRL TAB &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &mt2 RCTRL MINUS &kp RET
-        &kp LSHFT      &kp Z     &kp X     &kp C     &kp V     &kp B       &kp N     &kp M     &td1      &td2      &mt2 RSHFT SLASH
+        &mt LCTRL TAB  &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &mt RCTRL MINUS &kp RET
+        &kp LSHFT      &kp Z     &kp X     &kp C     &kp V     &kp B       &kp N     &kp M     &td1      &td2      &mt RSHFT SLASH
                  &lt 4 BSLH   &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL      &lt 1 RET  &lt 2 K_APP  &lt 4 UNDER 
       >;
 		};
