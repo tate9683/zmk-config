@@ -6,6 +6,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config SPI
+    default y
+    
 endif
 
 if SHIELD_MAGLIT40_LEFT || SHIELD_MAGLIT40_RIGHT
