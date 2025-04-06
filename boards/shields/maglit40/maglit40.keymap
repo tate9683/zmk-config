@@ -11,12 +11,6 @@
 
 / {
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&mt LCTRL Q>, <&kp ESC>;
-        };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -37,7 +31,7 @@
 
     default_layer {
       bindings = <
-        &kp ESC        &kp Q     &kp W     &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P            &kp BSPC 
+        &kp ESC        &kp Q     &kp W     &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P           &kp BSPC 
         &mt LCTRL TAB  &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &mt RCTRL MINUS &kp RET
         &kp LSHFT      &kp Z     &kp X     &kp C     &kp V     &kp B       &kp N     &kp M     &td1      &td2      &mt RSHFT SLASH
                  &lt 4 BSLH   &mt LALT CAPS  &lt 3 SPACE  &mt LCMD DEL      &lt 1 RET  &lt 2 K_APP  &lt 4 UNDER 
@@ -80,5 +74,4 @@
       >;
     };
 
-  };
 };
