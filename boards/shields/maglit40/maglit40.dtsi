@@ -27,23 +27,6 @@
     diode-direction = "col2row";
     wakeup-source;
   };
-
-  vbatt: vbatt {
-    compatible = "zmk,battery-voltage-divider";
-    io-channels = <&adc 7>;
-    output-ohms = <510000>;
-    full-ohms = <(510000 + 1000000)>;
-    power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-  };
-};
-
-&gpio0 {
-    fastbatcharge: fast-battery-charge {
-        gpio-hog;
-        gpios = <13 GPIO_ACTIVE_HIGH>;
-        output-low;
-        line-name = "Fast Battery Charge";
-    };
 };
 
 
