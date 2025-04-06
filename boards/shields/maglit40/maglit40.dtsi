@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "maglit40-layouts.dtsi"
+#include "boards/maglit40-layouts.dtsi"
 
 / {
   chosen {
@@ -7,6 +8,7 @@
     transform = <&default_transform>;
     zmk,battery = &vbatt;
     zmk,physical-layout = &Maglit40_default_layout;
+    zmk,underglow = &led_strip;
   };        
 
   default_transform: keymap_transform_0 {
