@@ -85,7 +85,7 @@
     3_function_layer {
       bindings = <
         &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp AT                &kp QMARK      &trans       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &trans
-        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp HASH              &kp DQT        &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGH   &trans   
+        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp HASH              &kp DQT        &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans   
         &trans          &trans        &trans        &trans        &trans                                             &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK        &trans
                                       &trans        &trans        &trans                                             &trans       &mo 5          &trans
       >;
@@ -94,7 +94,7 @@
     4_symbols_layer {
       bindings = <
         &kp EXCL        &kp AT        &kp HASH      &kp DLLR      &kp PRCNT     &kp BSLH              &kp PIPE       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT 
-        &kp CARET       &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp SLCK              &kp LNLCK      &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      
+        &kp CARET       &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp SLCK              &kp KP_NLCK    &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      
         &trans          &trans        &trans        &trans        &trans                                             &trans        &trans        &trans        &trans        &trans
                                       &trans        &trans        &trans                                             &mo 5         &trans        &trans
       >;
