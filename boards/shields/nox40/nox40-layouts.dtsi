@@ -1,9 +1,9 @@
 #include <physical_layouts.dtsi>
 
 / {
-    Nox40_default_layout: Nox40_default_layout {
+    nox40_default_layout: nox40_default_layout {
         compatible = "zmk,physical-layout";
-        display-name = "NOX40";
+        display-name = "Nox40";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  200    0       0     0     0>
@@ -52,8 +52,8 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        Nox40_default_layout {
-            physical-layout = <&Nox40_default_layout>;
+        nox40_default_layout {
+            physical-layout = <&nox40_default_layout>;
             positions
                 = < 0  1  2  3  4  5     6  7  8  9 10 11>
                 , <10 11 12 13 14 15    16 17 18 19 20 21>
