@@ -1,4 +1,4 @@
-name: zmk-keyboard-maglit40
+name: zmk-keyboard-nox40
 
 build:
   settings:
