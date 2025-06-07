@@ -29,6 +29,6 @@ include:
     shield: nox40_left
     snippet: studio-rpc-usb-uart
   - board: nox40_xiao_ble
-    shield: maglit40_right
+    shield: nox40_right
   - board: nox40_xiao_ble
     shield: settings_reset
