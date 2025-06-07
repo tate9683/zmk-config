@@ -17,10 +17,18 @@ include:
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset
 ### Maglit40ble ###
+#  - board: seeeduino_xiao_ble
+#    shield: maglit40_left
+#    snippet: studio-rpc-usb-uart
+#  - board: seeeduino_xiao_ble
+#    shield: maglit40_right
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
+### Maglit40ble ###
   - board: seeeduino_xiao_ble
-    shield: maglit40_left
+    shield: nox40_left
     snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
+  - board: nox40_xiao_ble
     shield: maglit40_right
-  - board: seeeduino_xiao_ble
+  - board: nox40_xiao_ble
     shield: settings_reset
