@@ -52,7 +52,7 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        nox40_default_layout {
+        default_layout_map: default_layout {
             physical-layout = <&nox40_default_layout>;
             positions
                 = < 0  1  2  3  4  5     6  7  8  9 10 11>
