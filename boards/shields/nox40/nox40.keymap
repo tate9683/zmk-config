@@ -57,18 +57,18 @@
 
     0_default_layer {
       bindings = <
-        &td_QEC         &kp W         &kp E         &kp R         &kp T         &kp LBRC              &kp RBRC        &kp Y         &kp U         &kp I         &kp O         &kp P    
+        &td_QEC         &kp W         &kp E         &kp R         &kp T         &kp LPAR              &kp RPAR        &kp Y         &kp U         &kp I         &kp O         &kp P    
         &kp A           &kp S         &kp D         &kp F         &kp G         &kp TAB               &kp SQT         &kp H         &kp J         &kp K         &kp L         &td_CME 
         &ht LSHFT Z     &kp X         &kp C         &kp V         &kp B                                               &kp N         &kp M         &td_CS        &td_DC        &ht RSHFT SLASH
-                                      &mt LALT CAPS &lt 1 SPACE   &lt 2 DEL                                           &lt 3 BSPC    &lt 4 RET     &mt LGUI K_MENU
+                                      &mt LALT CAPS &lt 1 SPACE   &lt 2 DEL                                                         &lt 3 BSPC    &lt 4 RET     &mt LGUI K_MENU
       >;
 		};
 
     1_navigation_layer {
       bindings = <
-        &trans          &kp PG_UP     &kp UP        &kp PG_DN     &trans        &kp LBKT              &kp RBKT        &trans        &kp PG_UP     &kp UP        &kp PG_DN     &trans
-        &trans          &kp LEFT      &kp DOWN      &kp RIGHT     &kp BSPC      &kp GRAVE             &kp TILDE       &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &kp BSPC
-        &trans          &kp HOME      &kp LA(UP)    &kp END       &trans                                              &trans        &kp HOME      &kp LA(UP)    &kp END       &trans
+        &trans          &kp PG_UP     &kp UP        &kp PG_UP     &kp LC(T)     &kp LBKT              &kp RBKT        &trans        &kp PG_UP     &kp UP        &kp PG_UP     &kp BSPC
+        &kp LC(A)       &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       &kp GRAVE             &kp TILDE       &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
+        &kp LC(Z)       &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(B)                                           &trans        &kp HOME      &kp LA(UP)    &kp END       &trans
                                       &trans        &trans        &mo 5                                               &trans        &trans        &trans
       >;
     };
@@ -84,7 +84,7 @@
 
     3_function_layer {
       bindings = <
-        &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp AT                &kp QMARK      &trans       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &trans
+        &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp LBRC              &kp RBRC       &trans       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &trans
         &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp HASH              &kp DQT        &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans   
         &trans          &trans        &trans        &trans        &trans                                             &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK        &trans
                                       &trans        &trans        &trans                                             &trans       &mo 5          &trans
