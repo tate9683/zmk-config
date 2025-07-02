@@ -6,7 +6,7 @@
     zmk,kscan = &kscan0;
     transform = <&default_transform>;
     zmk,battery = &vbatt;
-    zmk,physical-layout = &default_layout;
+    zmk,physical-layout = &nox40_default_layout;
   };        
 
   default_transform: keymap_transform_0 {
