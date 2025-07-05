@@ -93,9 +93,9 @@
 
     4_navigation_layer {
       bindings = <
-        &trans          &kp PG_UP     &kp UP        &kp PG_UP     &kp LC(T)     &kp LBKT              &kp RBKT       &trans        &kp PG_UP     &kp UP        &kp PG_UP     &kp BSPC
-        &trans          &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       &kp GRAVE             &kp TILDE      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
-        &trans          &trans        &trans        &trans        &trans                                             &trans        &kp HOME      &kp LA(UP)    &kp END       &trans
+        &trans          &kp PG_UP     &kp UP        &kp PG_UP     &kp LC(T)     &kp LBKT              &kp RBKT       &trans        &kp PG_UP     &kp UP        &kp PG_DN     &trans
+        &trans          &kp LEFT      &kp DOWN      &kp RIGHT     &kp END       &kp GRAVE             &kp TILDE      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans
+        &trans          &kp HOME      &kp LA(UP)    &kp END       &trans                                             &trans        &kp HOME      &kp LA(UP)    &kp END       &trans
                                       &trans        &trans        &trans                                             &mo 5         &trans        &trans
       >;
     };
