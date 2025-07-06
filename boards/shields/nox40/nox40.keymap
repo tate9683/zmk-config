@@ -67,7 +67,7 @@
     1_function_layer {
       bindings = <
         &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp LBRC              &kp RBRC       &trans       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN   &trans
-        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp SLCK              &kp LNLCK      &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans   
+        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp SLCK              &kp NLCK      &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans   
         &trans          &trans        &trans        &trans        &trans                                             &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK        &trans
                                       &trans        &mo 5         &trans                                             &trans       &trans         &trans
       >;
