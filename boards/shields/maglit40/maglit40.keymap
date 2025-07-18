@@ -89,7 +89,7 @@
         &kp ESC        &td_QEC        &kp W         &kp E         &kp R         &kp T               &kp Y         &kp U         &kp I         &kp O         &kp P             &kp BSPC
         &mt LCTRL TAB  &kp A          &kp S         &kp D         &kp F         &kp G               &kp H         &kp J         &kp K         &kp L         &td_CME           &kp RET
         &kp LSHFT      &ht LSHFT Z    &kp X         &kp C         &kp V         &kp B               &kp N         &kp M         &td_CS        &td_DC        &ht RSHFT SLASH
-                               &trans     &mt LGUI CAPS    &lt 1 SPACE   &mt LART DEL               &lt 2 RET     &lt 4 K_APP   &mt RSHFT BSPC    
+                               &trans     &mt LGUI CAPS    &lt 1 SPACE   &mt LALT DEL               &lt 2 RET     &lt 4 K_APP   &mt RSHFT BSPC    
       >;
 		};
 
