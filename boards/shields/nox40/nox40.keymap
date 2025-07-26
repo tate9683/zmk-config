@@ -93,7 +93,7 @@
       bindings = <
         &kp JP_PLUS     &kp MINUS     &kp JP_ASTERISK &kp SLASH   &kp JP_UNDERSCORE &kp JP_LBRACE    &kp JP_LBRACKET &kp JP_EQUAL  &kp JP_COLON  &kp DOT       &kp JP_YEN    &kp JP_TILDE
         &kp N1          &kp N2        &kp N3        &kp N4        &kp N5            &kp JP_RBRACE    &kp JP_RBRACKET &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        
-        &ht LSHFT  N6   &kp N7        &kp N8        &kp N9        &kp N0                                             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5
+        &kp N6   &kp N7        &kp N8        &kp N9        &kp N0                                             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5
                                       &trans        &trans        &mo 5                                              &trans       &trans         &trans
       >;
     };
@@ -102,7 +102,7 @@
       bindings = <
         &kp LA(TAB)     &kp LG(TAB)   &kp LG(V)     &kp LG(Z)     &kp LG(X)     &kp LC(C)            &kp LG(D)       &trans        &kp PG_UP     &kp UP        &kp PG_DN     &trans   
         &kp F1          &kp F2        &kp F3        &kp F4        &kp F5        &kp LC(V)            &kp LG(E)       &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp BSPC 
-        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10                                            &kp END       &trans        &kp LA(UP)    &trans        &trans
+        &ht LSHFT F6    &kp F7        &kp F8        &kp F9        &kp F10                                            &kp END       &trans        &kp LA(UP)    &trans        &trans
                                       &trans        &trans        &trans                                             &mo 5         &trans        &trans
       >;
     };
