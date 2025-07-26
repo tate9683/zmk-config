@@ -66,13 +66,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&kp DOT>, <&kp JP_COLON>;
         };
         td_CME: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&mt RCTRL MINUS>, <&kp EQUAL>;
+            bindings = <&mt RCTRL MINUS>, <&kp JP_EQUAL>;
         };  
     };
 
@@ -93,7 +93,7 @@
       bindings = <
         &kp JP_PLUS     &kp MINUS     &kp JP_ASTERISK &kp SLASH   &kp JP_UNDERSCORE &kp JP_LBRACE    &kp JP_LBRACKET &kp JP_EQUAL  &kp JP_COLON  &kp DOT       &kp JP_YEN    &kp JP_TILDE
         &kp N1          &kp N2        &kp N3        &kp N4        &kp N5            &kp JP_RBRACE    &kp JP_RBRACKET &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        
-        &kp N6          &kp N7        &kp N8        &kp N9        &kp N0                                             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5
+        &ht LSHFT  N6   &kp N7        &kp N8        &kp N9        &kp N0                                             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5
                                       &trans        &trans        &mo 5                                              &trans       &trans         &trans
       >;
     };
@@ -109,8 +109,8 @@
 
     layer_3 {
       bindings = <
-        &kp EXCL    &kp JP_DQUOTE     &kp HASH      &kp DLLR      &kp PRCNT     &kp C_VOL_UP          &kp SLCK       &kp JP_AMPERSAND  &kp JP_QUOTE  &kp JP_LPAREN    &kp JP_RPAREN  &kp JP_CARET   
-        &trans          &trans        &trans        &trans        &trans        &kp C_VOL_DN          &kp KP_NLCK    &kp JP_AT     &kp JP_BACKQUOTE  &kp JP_LBRACKET  &kp JP_LBRACE  &trans        
+        &kp EXCL    &kp JP_DQUOTE     &kp HASH      &kp DLLR      &kp PRCNT     &kp LA(TAB)           &kp C_VOL_UP   &kp JP_AMPERSAND  &kp JP_QUOTE  &kp JP_LPAREN    &kp JP_RPAREN  &kp JP_CARET   
+        &trans          &trans        &trans        &trans        &trans        &kp LS(LA(TAB))       &kp C_VOL_DN   &kp JP_AT     &kp JP_BACKQUOTE  &kp JP_LBRACKET  &kp JP_LBRACE  &trans        
         &trans          &trans        &trans        &trans        &trans                                             &mkp JP_PLUS  &kp JP_ASTERISK   &kp JP_RBRACKET  &kp JP_RBRACE  &kp JP_UNDERSCORE
                                       &trans        &mo 5         &trans                                             &trans        &trans        &trans
       >;
