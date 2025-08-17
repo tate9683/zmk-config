@@ -28,7 +28,7 @@
 
         reg = <0>;
         spi-max-frequency = <4000000>;
-        chain-length = <1>; /* 実装LED数に合わせて変更 */
+        chain-length = <2>; 
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         color-mapping = <LED_COLOR_ID_GREEN
