@@ -31,7 +31,7 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 
 &led_strip {
-    chain-length = <1>;
+    chain-length = <2>;
 };
 
 &lt {
