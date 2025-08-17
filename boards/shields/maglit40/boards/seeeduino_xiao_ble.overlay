@@ -1,20 +1,5 @@
 #include <dt-bindings/led/led.h>
 
-/ {
-    chosen {
-        zmk,underglow = &led_strip;
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 7>;
-        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-        output-ohms = <510000>;
-        full-ohms = <(1000000 + 510000)>;
-    };
-};
-
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
@@ -40,15 +25,23 @@
 
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
-        reg = <0>;
+
+        /* SPI */
+        reg = <0>; /* ignored, but necessary for SPI bindings */
         spi-max-frequency = <4000000>;
-        chain-length = <8>; /* 実LED数 */
+
+        /* WS2812 */
+        chain-length = <1>; /* number of LEDs */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
-        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+        color-mapping = <LED_COLOR_ID_GREEN
+                         LED_COLOR_ID_RED
+                         LED_COLOR_ID_BLUE>;
     };
 };
 
-&adc {
-    status = "okay";
+/ {
+  chosen {
+    zmk,underglow = &led_strip;
+  };
 };
