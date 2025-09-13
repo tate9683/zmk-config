@@ -79,16 +79,6 @@
             tapping-term-ms = <150>;
             bindings = <&mt RCTRL MINUS>, <&kp JP_UNDERSCORE>;
         };
-        layer_indicator: layer_indicator {
-            compatible = "zmk,behavior-layer-indicator";
-            #binding-cells = <0>;
-            color-for-layer-0 = <255 0 0>;   // 赤
-            color-for-layer-1 = <0 255 0>;   // 緑
-            color-for-layer-2 = <0 0 255>;   // 青
-            color-for-layer-3 = <255 255 0>; // 黄
-            color-for-layer-4 = <0 255 255>; // シアン
-            color-for-layer-5 = <255 0 255>; // マゼンタ
-        };
     };
     
   keymap {
@@ -149,3 +139,27 @@
     };
   };
 };
+
+#include <zmk/event_manager.h>
+#include <zmk/events/layer_state_changed.h>
+#include <zmk/underglow.h>
+
+int layer_state_changed_handler(const zmk_event_t *eh) {
+    int active_layer = zmk_keymap_highest_layer_active();
+
+    switch (active_layer) {
+        case 0:
+            underglow_set_color(255, 255, 255); // 白
+            break;
+        case 1:
+            underglow_set_color(0, 0, 255);     // 青
+            break;
+        case 2:
+            underglow_set_color(255, 0, 0);     // 赤
+            break;
+    }
+    return ZMK_EV_EVENT_BUBBLE;
+}
+
+ZMK_LISTENER(layer_state_changed_handler, layer_state_changed_handler);
+ZMK_SUBSCRIPTION(layer_state_changed_handler, layer_state_changed);
